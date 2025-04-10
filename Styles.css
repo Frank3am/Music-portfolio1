@@ -1,105 +1,116 @@
-/* Basic reset */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and font styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+    line-height: 1.6;
     padding: 20px;
 }
 
-/* Header styling */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+h1, h2, h3 {
+    color: #e6e6e6;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+a {
+    color: #ff6347; /* Tomato red */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #00ff7f; /* Neon green */
+}
+
+/* Hero Section */
+#hero {
     text-align: center;
+    margin-bottom: 50px;
 }
 
-header h1 {
-    font-size: 2.5em;
+#hero h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: #ff6347;
 }
 
-header nav ul {
+#hero p {
+    font-size: 1.5rem;
+    color: #b3b3b3;
+}
+
+/* About Section */
+#about {
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #d0d0d0;
+}
+
+/* Music Section */
+#music {
+    margin-bottom: 50px;
+}
+
+#music h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.music-links ul {
     list-style-type: none;
     padding: 0;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
+.music-links li {
+    margin-bottom: 15px;
 }
 
-header nav ul li a {
+.music-links li a {
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.music-links li a:hover {
+    background-color: #ff6347;
     color: #fff;
-    text-decoration: none;
-    font-weight: bold;
 }
 
-header nav ul li a:hover {
-    text-decoration: underline;
+/* Contact Section */
+#contact {
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-/* Section styling */
-section {
-    margin: 30px 0;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+#contact p {
+    font-size: 1.1rem;
+    color: #d0d0d0;
 }
 
-section h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-section p {
-    font-size: 1.1em;
-    margin-bottom: 20px;
-}
-
-section ul {
-    font-size: 1.1em;
-}
-
-section ul li {
-    margin-bottom: 5px;
-}
-
-/* Music sample section */
-audio {
-    display: block;
-    margin-top: 15px;
-    width: 100%;
-}
-
-/* Contact section styling */
-#contact a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#contact a:hover {
-    text-decoration: underline;
-}
-
-/* Footer styling */
+/* Footer */
 footer {
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     background-color: #333;
-    color: #fff;
-    margin-top: 30px;
+    color: #b3b3b3;
 }
 
 footer p {
-    font-size: 1em;
-    margin: 5px;
+    font-size: 1rem;
 }
